@@ -1,0 +1,37 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int size,i,j;
+		System.out.print("enter size");
+		size=sc.nextInt();
+		int a[];
+		a=new int[size];
+		System.out.println("enter elements");
+		for(i=0;i<size;i++)
+		{
+		    a[i]=sc.nextInt();
+		}
+		for(i=0;i<size;i++)
+		{
+		    for(j=i+1;j<size;j++)
+		    {
+		        if(a[i]==a[j])
+		        System.out.print("duplicate element is "+a[j]);
+		    }
+		}
+	}
+}
+
+
+
+
+output:
+enter size5
+enter elements5
+3
+2
+5
+2
+duplicate element is 2
