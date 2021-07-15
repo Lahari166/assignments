@@ -1,0 +1,27 @@
+
+import java.util
+class joinframe {
+    public static void main(String[] args) {
+        ArrayList<String>a=new ArrayList<String>();
+        ArrayList<String>a2=new ArrayList<String>();
+        a.add("rama");
+        
+        a.add("sita");
+        a.add("laxmi");
+        a2.add("surya");
+        a2.add("rahim");
+        a2.add("banu");
+        System.out.println(a);
+        System.out.println(a2);
+        a.addAll(a2);
+        System.out.println(a);
+        Collections.sort(a);
+        System.out.print(a);
+}
+}
+Output:
+java -cp /tmp/EX3yO35gZJ joinframe
+[rama, sita, laxmi]
+[surya, rahim, banu]
+[rama, sita, laxmi, surya, rahim, banu]
+[banu, laxmi, rahim, rama, sita, surya]
